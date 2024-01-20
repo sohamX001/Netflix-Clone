@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+.main{
+    background-image: url(assets/img/bg.jpg);
+    height: 100vh;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(900px, 100vw);
+}
+
+.main .box{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+}
+
+nav{
+    /* background-color: aqua; */
+    position: relative;
+    z-index: 10;
+    max-width: 75vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px;
+}
+
+nav .buttons{
+    margin: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .buttons .btn2, .btn1{
+    padding: 5px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    color: white;
+    /* font-weight: 500; */
+}
+
+.btn1{
+    background-color: rgba(60, 60, 60, 0.316);
+    border: 1px solid rgba(255, 255, 255, 0.306);
+    font-weight: normal;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 4px 12px;
+}
+.btn2{
+    margin-left: 20px;
+    background-color: rgb(229, 9, 20);;
+    border: none;
+}
+
+.btn1 .btn1-icon{
+    font-size: 15px;
+}
+
+
+.hero{
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: calc(100% - 88.5px);
+    /* gap: 1px; */
+    padding: 0px 23px;
+    text-align: center;
+}
+
+.hero> :nth-child(1){
+    font-size: 2.75rem;
+    font-weight: 900;
+}
+.hero> :nth-child(2){
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+.hero> :nth-child(3){
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+
+.hero .get-email{
+    width: 50%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 12px;
+    margin-left: 30px;
+    margin-top: 12px;
+}
+
+
+.get-email input{
+    background-color: rgba(0, 0, 0, 0.627);
+    border: 1px solid rgba(255, 255, 255, 0.51);
+    padding: 15px 15px 15px 10px;
+    border-radius: 4px;
+    color: white;
+
+}
+.get-email input::placeholder{
+    color: rgba(255, 255, 255, 0.611);
+}
+
+.get-email button{
+    padding: 10px 35px;
+    font-size: 22px;
+    font-weight: 600;
+    background-color: rgb(229, 9, 20);;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.main .line{
+    height: 0.5rem;
+    background-color: rgb(35,35,35);
+}
+
+
+.first, .second, .third, .fourth{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 65vw;
+    margin: 70px 150px;
+}
+
+
+.first .text{
+    color: white;
+}
+
+.text> :nth-child(1){
+    font-size: 50px;
+    font-weight: 900;
+}
+.text> :nth-child(2){
+    font-size: 20px;
+    /* font-weight: 900; */
+}
+
+
+.first .sec1-img{
+    position: relative;
+    max-width: 30vw;
+}
+
+.sec1-img img{
+    position: relative;
+    max-width: 35vw;
+    z-index: 10;
+}
+
+.sec1-img video{
+    position: absolute;
+    top: 70px;
+    width: 30vw;
+    left: 60px;
+}
+
+.second{
+    max-width: 90vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4.5rem 0;
+}
+
+.second .sec2-img{
+    max-width: 35vw;
+    margin-right: 140px;
+    /* max-height: 50px; */
+}
+
+.second .text{
+    width: 45%;
+    color: white;
+}
+
+.third{
+    position: relative;
+    max-width: 75vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4.5rem 0;
+}
+
+.sec3-img img{
+    position: relative;
+    max-width: 35vw;
+    z-index: 10;
+}
+
+.sec3-img video{
+    position: absolute;
+    right: 78px;
+    max-width: 23vw;
+    top: 110px;
+}
+
+.fourth{
+    position: relative;
+    max-width: 75vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4.5rem 0;
+}
+
+.fourth .text{
+    margin-left: 100px;
+}
+
+
+.faq{
+    color: white;
+    padding: 34px;
+}
+
+.faq h1{
+    text-align: center;
+    font-size: xxx-large;
+    margin-bottom: 18px;
+    margin-top: 34px;
+}
+
+.faqbox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(45, 45, 45);
+    padding: 22px;
+    max-width: 70vw;
+    margin: 8px auto;
+    font-size: x-large;
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+}
+
+.faqbox:hover{
+    background-color: rgb(65, 65, 65);
+}
+
+
+.foot-email-head{
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    margin: 20px 0px;
+}
+
+.footer-email{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 60px;
+}
+
+.footer-email input{
+    background-color: rgba(22, 22, 22, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.51);
+    padding: 15px 15px 15px 10px;
+    border-radius: 4px;
+    color: white;
+}
+.footer-email input::placeholder{
+    color: rgba(255, 255, 255, 0.611);
+}
+
+.footer-email button{
+    padding: 10px 35px;
+    font-size: 22px;
+    font-weight: 600;
+    background-color: rgb(229, 9, 20);;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+footer{
+    color: rgb(180, 180, 180);
+    max-width: 70vw;
+    margin: 5rem auto;
+}
+
+footer span a{
+    color: rgb(180, 180, 180);
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 1.25rem;
+}
+
+.footer-items{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.footer-items a{
+    /* text-decoration: none; */
+    color: rgb(180, 180, 180);
+    font-weight: 100;
+    font-size: 14px;
+}
+
+.footer-button{
+    background-color: rgba(60, 60, 60, 0.316);
+    border: 1px solid rgba(255, 255, 255, 0.306);
+    font-weight: normal;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 4px 12px;
+    max-width: 50%;
+    border-radius: 4px;
+}
+
+.footer .foot-note{
+    grid-column-start: 1;
+}
